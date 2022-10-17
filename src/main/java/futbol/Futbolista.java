@@ -20,7 +20,7 @@ package futbol;
 // (un futbolista sólo puede jugar con las manos si es de la clase Portero).
 
 // • Crear los métodos get y set para obtener y dar valor al atributo.
-public abstract class Futbolista implements Comparable<Futbolista> {
+public abstract class Futbolista implements Comparable {
     private String nombre;
     private int edad;
     private String posicion;
@@ -75,13 +75,5 @@ public abstract class Futbolista implements Comparable<Futbolista> {
     public String elFutbolista() {
         return toString();
     }
-
-    @Override
-    public int compareTo(Futbolista f) {
-        return 0;
-
-    }
-
-
 
 }

@@ -37,6 +37,8 @@ public class Jugador extends Futbolista {
         return Math.abs(this.getEdad() - o.getEdad());
     }
 
+    
+
     @Override
     public boolean jugarConLasManos() {
         return false;
@@ -44,8 +46,7 @@ public class Jugador extends Futbolista {
 
     @Override
     public int compareTo(Futbolista o) {
-        // TODO Auto-generated method stub
-        return 0;
+        return Math.abs(this.getEdad() - o.getEdad());
     }
 
     public short getGolesMarcados() {
